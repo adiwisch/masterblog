@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post."
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is another post."
+    },
+    {
+        "id": 3,
+        "author": "Hans Meiser",
+        "title": "Mein erster Blogpost",
+        "content": "Ich habe keinen blassen Schimmer was ich hier schreiben soll"
+    },
+    {
+        "id": 4,
+        "author": "Hans Meiser",
+        "title": "Mein zweiter Blogpost",
+        "content": "Schau'n mer mal"
+    }
+]
