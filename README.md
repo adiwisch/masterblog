@@ -1,0 +1,1 @@
+Anstelle wie in der Übung erwartet zwei Templates namens add.html und update.html zu erstellen habe ich sie in post_form.html zusammengefasst, da die Inhalte bis auf vorausgefüllte Werte und Actions identisch waren und das eine Pflege unnötig aufwändig macht
