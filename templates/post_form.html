@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ 'Edit Blog Post' if post else 'Create a New Blog Post' }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ 'Edit Blog Post' if post else 'Create a New Blog Post' }}</h1>
+
+    <div class="form-container">
+        <form action="{{ url_for('update', post_id=post.id) if post else url_for('add') }}"
+              method="POST">
+
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text"
+                       id="author"
+                       name="author"
+                       value="{{ post.author if post else '' }}"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text"
+                       id="title"
+                       name="title"
+                       value="{{ post.title if post else '' }}"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea id="content"
+                          name="content"
+                          rows="6"
+                          required>{{ post.content if post else '' }}</textarea>
+            </div>
+
+            <button type="submit">
+                {{ 'Save Changes' if post else 'Create Blog Post' }}
+            </button>
+        </form>
+    </div>
+
+    <p class="back-link">
+        <a href="{{ url_for('index') }}">Back to Blog Overview</a>
+    </p>
+</body>
+</html>

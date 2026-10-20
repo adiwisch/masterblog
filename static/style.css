@@ -113,3 +113,104 @@ button[type="submit"]:hover {
     background-color: #333;
 }
 
+
+.delete-post-button {
+    display: inline-block;
+    background-color: #B33A3A;
+    color: #FFF;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.delete-post-button:hover {
+    background-color: #8F2929;
+}
+
+
+.status-message {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.status-message.success {
+    color: #276738;
+    background-color: #E3F4E7;
+    border: 1px solid #B5DDBD;
+}
+
+.status-message.error {
+    color: #9B2525;
+    background-color: #FBE7E7;
+    border: 1px solid #E8BABA;
+}
+
+
+.edit-post-button {
+    display: inline-block;
+    background-color: #4F4F4F;
+    color: #FFF;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.edit-post-button:hover {
+    background-color: #333;
+}
+
+
+.like-form {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.like-button {
+    background-color: #F5F5F5;
+    color: #B33A3A;
+    padding: 8px 14px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.like-button:hover {
+    background-color: #FBE7E7;
+}
+
+
+/* Consistent height and alignment for all post buttons */
+.like-button,
+.edit-post-button,
+.delete-post-button {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+/* Remove default spacing around the Like form */
+.like-form {
+    display: inline-flex;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+
+
+
